@@ -226,3 +226,23 @@ Python 3.12, while the project claims 3.11. Replaced with an explicit `TypeVar`.
 **B9. `/tmp` means different things to Git Bash and to Python on Windows**, so the
 multi-seed sweep wrote reports the reader could not find. Switched to explicit
 absolute paths. No effect on shipped code - the sweep is a development check.
+
+**B10. A fresh clone was unrunnable on Windows — two stacked bugs.** Verified by
+actually cloning the pushed repo and running it, which is the only way either would
+have surfaced; both were invisible in the working directory.
+
+1. Git's `core.autocrlf=true` (the Windows default) rewrote `run.sh` to CRLF on
+   checkout. The shebang became `#!/usr/bin/env bash\r`, and every command carried a
+   trailing carriage return. Fixed with a `.gitattributes` pinning `eol=lf`, plus
+   `git add --renormalize` so the already-committed blobs were rewritten too.
+2. `run.sh` picked its interpreter with `command -v python3`, which only tests that
+   something named `python3` is on PATH. On Windows the Microsoft Store App Execution
+   Alias satisfies that check and then refuses to run, printing "Python was not
+   found". The fallback to `python` therefore never fired. Fixed by probing each
+   candidate with an actual version check (`python3`, `python`, `py`, and `$PYTHON`),
+   so a candidate has to execute *and* report 3.11+ before it is selected.
+
+Also worth recording: the first clone test reported exit code 0 despite failing,
+because the command was piped into `grep` and a pipeline returns its *last* command's
+status. The test was lying, not the script. Re-verified afterwards by checking
+`PIPESTATUS[0]` and by reading the full output rather than a filtered view.

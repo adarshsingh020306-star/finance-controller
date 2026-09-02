@@ -5,22 +5,37 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-PY="${PYTHON:-python3}"
-command -v "$PY" >/dev/null 2>&1 || PY=python
-
-echo "==> Python: $($PY --version)"
-$PY - <<'CHECK'
-import sys
-if sys.version_info < (3, 11):
-    sys.exit(f"needs Python 3.11+, found {sys.version.split()[0]}")
-CHECK
+# Find a working Python 3.11+. Existence is not enough: on Windows a
+# `python3` App Execution Alias stub resolves on PATH but fails when run,
+# so each candidate is probed by actually executing it.
+PY=""
+for cand in "${PYTHON:-}" python3 python py; do
+  [ -n "$cand" ] || continue
+  if "$cand" -c 'import sys; sys.exit(0 if sys.version_info >= (3, 11) else 1)' \
+      >/dev/null 2>&1; then
+    PY="$cand"
+    break
+  fi
+done
+if [ -z "$PY" ]; then
+  echo "error: no Python 3.11+ on PATH (tried \$PYTHON, python3, python, py)" >&2
+  exit 1
+fi
+echo "==> Python: $("$PY" --version 2>&1) ($PY)"
 
 if [ ! -d .venv ]; then
   echo "==> Creating .venv"
   "$PY" -m venv .venv
 fi
 # shellcheck disable=SC1091
-if [ -f .venv/bin/activate ]; then . .venv/bin/activate; else . .venv/Scripts/activate; fi
+if [ -f .venv/bin/activate ]; then
+  . .venv/bin/activate
+elif [ -f .venv/Scripts/activate ]; then
+  . .venv/Scripts/activate
+else
+  echo "error: .venv exists but has no activate script; remove it and retry" >&2
+  exit 1
+fi
 
 echo "==> Installing dependencies"
 python -m pip install -q --upgrade pip

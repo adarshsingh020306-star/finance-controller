@@ -1,0 +1,7 @@
+# Shell scripts MUST keep LF endings. Git's core.autocrlf=true (the Windows
+# default) otherwise rewrites run.sh to CRLF on checkout, which turns the
+# shebang into `bash\r` and makes a fresh clone unrunnable. See DECISIONS B10.
+* text=auto eol=lf
+*.sh text eol=lf
+Makefile text eol=lf
+*.png binary
