@@ -1,0 +1,5 @@
+pandas>=2.2
+rapidfuzz>=3.9
+anthropic>=0.40
+pydantic>=2.7
+python-dotenv>=1.0

@@ -1,0 +1,101 @@
+invoice_id,issue_date,due_date,amount,currency,customer_name,status
+INV-2025-0001,2025-01-06,2025-02-20,46867.51,USD,Copperfield Energy,overdue
+INV-2025-0002,2025-01-06,2025-02-20,92214.63,USD,Bluepeak Solutions,overdue
+INV-2025-0003,2025-01-07,2025-01-22,33630.93,USD,Bluepeak Solutions,overdue
+INV-2025-0004,2025-01-08,2025-02-22,19142.59,USD,Oakhaven Furniture,overdue
+INV-2025-0005,2025-01-09,2025-02-08,87305.81,USD,Indigo Wave Studios,overdue
+INV-2025-0006,2025-01-10,2025-02-24,32654.14,USD,Acme Corporation,overdue
+INV-2025-0007,2025-01-10,2025-02-09,78383.47,USD,Larkspur Publishing,overdue
+INV-2025-0008,2025-01-15,2025-03-16,31380.60,USD,Northwind Trading,overdue
+INV-2025-0009,2025-01-15,2025-03-16,16152.33,USD,Meridian Freight,overdue
+INV-2025-0010,2025-01-19,2025-03-20,80749.14,USD,Meridian Freight,overdue
+INV-2025-0011,2025-01-19,2025-02-03,42488.16,USD,Westgate Shipping,overdue
+INV-2025-0012,2025-01-20,2025-03-21,82034.08,USD,Nimbus Cloudworks,overdue
+INV-2025-0013,2025-01-20,2025-03-21,79061.67,USD,Emberline Textiles,overdue
+INV-2025-0014,2025-01-22,2025-02-06,82372.09,USD,Ironbark Constructions,overdue
+INV-2025-0015,2025-01-23,2025-02-22,85380.88,USD,Westgate Shipping,overdue
+INV-2025-0016,2025-01-25,2025-03-11,59512.73,USD,Pinnacle Foods,overdue
+INV-2025-0017,2025-01-26,2025-02-10,60190.33,USD,Palisade Security,overdue
+INV-2025-0018,2025-01-26,2025-03-27,37315.77,USD,Helvetica Logistics,overdue
+INV-2025-0019,2025-01-27,2025-03-28,57724.53,USD,Zephyr Telecom,overdue
+INV-2025-0020,2025-01-29,2025-03-15,91523.76,USD,Basalt Mining Group,overdue
+INV-2025-0021,2025-01-31,2025-03-17,52912.85,USD,Rosewood Pharmaceuticals,overdue
+INV-2025-0022,2025-01-31,2025-02-15,39193.83,USD,Kite & Compass Travel,overdue
+INV-2025-0023,2025-02-02,2025-04-03,14323.32,USD,Juniper Health Systems,overdue
+INV-2025-0024,2025-02-05,2025-03-22,31679.00,USD,Acme Corporation,overdue
+INV-2025-0025,2025-02-07,2025-03-09,21695.54,USD,Fairmont Chemicals,overdue
+INV-2025-0026,2025-02-09,2025-04-10,39446.15,USD,Rosewood Pharmaceuticals,overdue
+INV-2025-0027,2025-02-13,2025-03-30,67806.93,USD,Copperfield Energy,overdue
+INV-2025-0028,2025-02-16,2025-04-02,26020.01,USD,Everglade Water Tech,overdue
+INV-2025-0029,2025-02-17,2025-04-18,9374.73,USD,Zephyr Telecom,overdue
+INV-2025-0030,2025-02-18,2025-04-04,28901.01,USD,Aurora Biotech,overdue
+INV-2025-0031,2025-02-18,2025-04-19,10563.69,USD,Kestrel Analytics,overdue
+INV-2025-0032,2025-02-18,2025-03-05,94123.96,GBP,Silverline Apparel,overdue
+INV-2025-0033,2025-02-20,2025-04-21,520.08,USD,Sable & Finch Partners,overdue
+INV-2025-0034,2025-02-21,2025-03-08,3484.99,USD,Acme Corporation,overdue
+INV-2025-0035,2025-02-21,2025-03-23,47551.60,USD,Cinder Peak Outfitters,overdue
+INV-2025-0036,2025-02-22,2025-04-23,82736.94,USD,Everglade Water Tech,overdue
+INV-2025-0037,2025-02-24,2025-03-11,48293.10,USD,Quantum Ledger Systems,overdue
+INV-2025-0038,2025-02-25,2025-03-27,57365.31,USD,Vantage Point Media,overdue
+INV-2025-0039,2025-02-25,2025-03-27,46835.71,USD,Meridian Freight,overdue
+INV-2025-0040,2025-02-26,2025-03-28,17443.55,USD,Vantage Point Media,overdue
+INV-2025-0041,2025-03-02,2025-04-01,74831.61,EUR,Nimbus Cloudworks,overdue
+INV-2025-0042,2025-03-02,2025-04-01,24846.78,GBP,Rosewood Pharmaceuticals,overdue
+INV-2025-0043,2025-03-05,2025-04-19,66066.69,USD,Redwood Instruments,overdue
+INV-2025-0044,2025-03-05,2025-04-04,24878.90,USD,Palisade Security,overdue
+INV-2025-0045,2025-03-06,2025-04-05,1553.95,USD,Driftwood Hospitality,overdue
+INV-2025-0046,2025-03-09,2025-04-08,13715.22,USD,Driftwood Hospitality,overdue
+INV-2025-0047,2025-03-10,2025-05-09,92808.20,USD,Helvetica Logistics,overdue
+INV-2025-0048,2025-03-12,2025-04-11,64006.46,USD,Driftwood Hospitality,overdue
+INV-2025-0049,2025-03-13,2025-04-27,43317.19,USD,Marlowe Aerospace,overdue
+INV-2025-0050,2025-03-25,2025-04-24,59748.09,USD,Copperfield Energy,overdue
+INV-2025-0051,2025-03-30,2025-05-29,65420.83,USD,Stonebridge Insurance,overdue
+INV-2025-0052,2025-03-30,2025-05-14,57844.23,USD,Indigo Wave Studios,overdue
+INV-2025-0053,2025-04-02,2025-05-02,57473.49,USD,Fairmont Chemicals,overdue
+INV-2025-0054,2025-04-02,2025-04-17,74856.21,USD,Ironbark Constructions,overdue
+INV-2025-0055,2025-04-03,2025-05-18,54693.46,USD,Stonebridge Insurance,overdue
+INV-2025-0056,2025-04-03,2025-05-03,15009.36,USD,Quarry Lane Ceramics,overdue
+INV-2025-0057,2025-04-04,2025-04-19,93106.26,USD,Helvetica Logistics,overdue
+INV-2025-0058,2025-04-05,2025-04-20,67076.37,USD,Xenon Power Systems,overdue
+INV-2025-0059,2025-04-10,2025-05-25,40143.49,USD,Cinder Peak Outfitters,overdue
+INV-2025-0060,2025-04-11,2025-05-11,41828.01,USD,Stonebridge Insurance,overdue
+INV-2025-0061,2025-04-12,2025-05-12,3006.44,USD,Cinder Peak Outfitters,overdue
+INV-2025-0062,2025-04-16,2025-05-16,54592.71,USD,Stonebridge Insurance,overdue
+INV-2025-0063,2025-04-18,2025-06-02,19682.54,USD,Redwood Instruments,overdue
+INV-2025-0064,2025-04-18,2025-06-02,33197.64,USD,Yarrow Naturals,overdue
+INV-2025-0065,2025-04-19,2025-05-19,53998.73,USD,Cinder Peak Outfitters,overdue
+INV-2025-0066,2025-04-20,2025-05-05,38734.04,USD,Pinnacle Foods,overdue
+INV-2025-0067,2025-04-22,2025-06-06,65190.54,USD,Verdant Agriculture,overdue
+INV-2025-0068,2025-04-22,2025-05-22,39592.67,USD,Zephyr Telecom,overdue
+INV-2025-0069,2025-04-22,2025-06-06,7027.35,USD,Acme Corporation,overdue
+INV-2025-0070,2025-04-22,2025-05-07,1118.80,USD,Kite & Compass Travel,overdue
+INV-2025-0071,2025-04-25,2025-06-24,84368.71,USD,Palisade Security,overdue
+INV-2025-0072,2025-04-26,2025-06-10,7816.80,USD,Driftwood Hospitality,overdue
+INV-2025-0073,2025-04-26,2025-05-11,61122.40,USD,Yarrow Naturals,overdue
+INV-2025-0074,2025-04-27,2025-06-11,89902.18,USD,Larkspur Publishing,overdue
+INV-2025-0075,2025-05-01,2025-06-30,73162.18,USD,Pinnacle Foods,overdue
+INV-2025-0076,2025-05-03,2025-07-02,68308.28,USD,Lumen Digital Works,overdue
+INV-2025-0077,2025-05-04,2025-06-18,94538.71,USD,Aurora Biotech,overdue
+INV-2025-0078,2025-05-04,2025-05-19,9212.88,USD,Acme Corporation,overdue
+INV-2025-0079,2025-05-07,2025-07-06,66484.18,USD,Lumen Digital Works,overdue
+INV-2025-0080,2025-05-08,2025-06-22,42499.33,USD,Harbourview Consulting,overdue
+INV-2025-0081,2025-05-08,2025-06-07,20576.75,USD,Vantage Point Media,overdue
+INV-2025-0082,2025-05-09,2025-05-24,60319.64,EUR,Redwood Instruments,overdue
+INV-2025-0083,2025-05-12,2025-06-26,58499.01,USD,Verdant Agriculture,overdue
+INV-2025-0084,2025-05-13,2025-06-12,3298.90,USD,Rosewood Pharmaceuticals,overdue
+INV-2025-0085,2025-05-14,2025-05-29,20499.10,USD,Driftwood Hospitality,overdue
+INV-2025-0086,2025-05-14,2025-05-29,61072.97,USD,Marlowe Aerospace,overdue
+INV-2025-0087,2025-05-18,2025-06-17,13116.47,USD,Pinnacle Foods,overdue
+INV-2025-0088,2025-05-21,2025-06-20,70102.78,USD,Greystone Advisory,overdue
+INV-2025-0089,2025-05-23,2025-07-07,54234.46,USD,Larkspur Publishing,overdue
+INV-2025-0090,2025-05-24,2025-06-23,54536.94,USD,Rosewood Pharmaceuticals,overdue
+INV-2025-0091,2025-05-26,2025-07-10,16103.48,USD,Meridian Freight,overdue
+INV-2025-0092,2025-05-26,2025-06-25,63154.48,USD,Orion Manufacturing,overdue
+INV-2025-0093,2025-05-27,2025-06-26,17679.58,USD,Westgate Shipping,overdue
+INV-2025-0094,2025-05-27,2025-06-26,23211.55,USD,Palisade Security,overdue
+INV-2025-0095,2025-05-28,2025-06-12,24260.72,USD,Everglade Water Tech,overdue
+INV-2025-0096,2025-05-28,2025-06-27,9871.26,USD,Rosewood Pharmaceuticals,overdue
+INV-2025-0097,2025-05-29,2025-06-13,13144.81,USD,Fairmont Chemicals,overdue
+INV-2025-0098,2025-05-29,2025-06-28,13116.47,USD,Pinnacle Foods,overdue
+INV-2025-0099,2025-05-31,2025-06-30,37887.07,USD,Rosewood Pharmaceuticals,overdue
+INV-2025-0100,2025-06-07,2025-07-07,23211.55,USD,Palisade Security,overdue

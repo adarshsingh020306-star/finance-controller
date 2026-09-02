@@ -1,0 +1,132 @@
+txn_id,invoice_id,relation,case_type,unmatchable,ambiguous,has_invoice_ref,note
+TXN00001,INV-2025-0003,one_to_one,DUPLICATE,no,no,no,genuine credit; a duplicate re-posting of it also appears
+TXN00002,,unmatchable_transaction,DUPLICATE_ARTIFACT,yes,no,no,bank re-posting of an earlier credit; settles nothing
+TXN00003,INV-2025-0005,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00004,INV-2025-0014,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00005,INV-2025-0017,one_to_one,NAME_NOISE,no,no,no,counterparty mangled by rail style 4
+TXN00006,INV-2025-0011,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00007,,unmatchable_transaction,NO_INVOICE,yes,no,no,non-AR bank line (fee / payroll / lease / tax)
+TXN00008,,unmatchable_transaction,NO_INVOICE,yes,no,no,non-AR bank line (fee / payroll / lease / tax)
+TXN00009,INV-2025-0004,many_txns_one_invoice,PARTIAL,no,no,no,instalment 1/2; only the sum equals the invoice
+TXN00010,INV-2025-0027,one_to_one,DATE_DRIFT,no,no,no,prepaid ~45 days before due date
+TXN00011,INV-2025-0002,one_to_one,FEE_DEDUCTION,no,no,no,credit is short by a 25.00 wire fee
+TXN00012,INV-2025-0004,many_txns_one_invoice,PARTIAL,no,no,no,instalment 2/2; only the sum equals the invoice
+TXN00013,INV-2025-0006,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00014,INV-2025-0022,one_to_one,NAME_NOISE,no,no,no,counterparty mangled by rail style 2
+TXN00015,INV-2025-0001,one_to_one,FEE_DEDUCTION,no,no,no,credit is short by a 12.50 wire fee
+TXN00016,INV-2025-0025,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00017,INV-2025-0016,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00018,,unmatchable_transaction,NO_INVOICE,yes,no,no,looks like a customer receipt but no invoice exists for it
+TXN00019,,unmatchable_transaction,NO_INVOICE,yes,no,no,looks like a customer receipt but no invoice exists for it
+TXN00020,INV-2025-0020,many_txns_one_invoice,PARTIAL,no,no,no,instalment 1/3; only the sum equals the invoice
+TXN00021,,unmatchable_transaction,NO_INVOICE,yes,no,no,non-AR bank line (fee / payroll / lease / tax)
+TXN00022,INV-2025-0008,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00023,INV-2025-0034,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00024,INV-2025-0020,many_txns_one_invoice,PARTIAL,no,no,no,instalment 2/3; only the sum equals the invoice
+TXN00025,,unmatchable_transaction,NO_INVOICE,yes,no,no,looks like a customer receipt but no invoice exists for it
+TXN00026,INV-2025-0032,one_to_one,FX_DIFF,no,no,no,GBP invoice credited in USD; -0.40% off table rate
+TXN00027,,unmatchable_transaction,NO_INVOICE,yes,no,no,looks like a customer receipt but no invoice exists for it
+TXN00028,INV-2025-0021,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00029,INV-2025-0037,one_to_one,NAME_NOISE,no,no,no,counterparty mangled by rail style 1
+TXN00030,,unmatchable_transaction,NO_INVOICE,yes,no,no,looks like a customer receipt but no invoice exists for it
+TXN00031,INV-2025-0012,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00032,INV-2025-0020,many_txns_one_invoice,PARTIAL,no,no,no,instalment 3/3; only the sum equals the invoice
+TXN00033,INV-2025-0035,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00034,INV-2025-0042,one_to_one,FX_DIFF,no,no,no,GBP invoice credited in USD; -0.93% off table rate
+TXN00035,INV-2025-0010,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00036,,unmatchable_transaction,NO_INVOICE,yes,no,no,looks like a customer receipt but no invoice exists for it
+TXN00037,,unmatchable_transaction,NO_INVOICE,yes,no,no,looks like a customer receipt but no invoice exists for it
+TXN00038,INV-2025-0013,one_to_one,FEE_DEDUCTION,no,no,no,credit is short by a 30.00 wire fee
+TXN00039,INV-2025-0018,one_to_one,DUPLICATE,no,no,no,genuine credit; a duplicate re-posting of it also appears
+TXN00040,,unmatchable_transaction,DUPLICATE_ARTIFACT,yes,no,no,bank re-posting of an earlier credit; settles nothing
+TXN00041,INV-2025-0038,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00042,INV-2025-0028,one_to_one,NAME_NOISE,no,no,no,counterparty mangled by rail style 5
+TXN00043,INV-2025-0019,one_to_one,NAME_NOISE,no,no,no,counterparty mangled by rail style 2
+TXN00044,INV-2025-0041,one_to_one,FX_DIFF,no,no,no,EUR invoice credited in USD; +0.89% off table rate
+TXN00045,INV-2025-0026,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00046,INV-2025-0030,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00047,INV-2025-0023,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00048,INV-2025-0044,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00049,INV-2025-0045,one_txn_many_invoices,CONSOLIDATED,no,no,no,single credit clears 3 invoices; no individual invoice matches this amount
+TXN00049,INV-2025-0046,one_txn_many_invoices,CONSOLIDATED,no,no,no,single credit clears 3 invoices; no individual invoice matches this amount
+TXN00049,INV-2025-0048,one_txn_many_invoices,CONSOLIDATED,no,no,no,single credit clears 3 invoices; no individual invoice matches this amount
+TXN00050,INV-2025-0057,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00051,INV-2025-0031,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00052,INV-2025-0058,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00053,INV-2025-0054,one_to_one,NAME_NOISE,no,no,no,counterparty mangled by rail style 6
+TXN00054,INV-2025-0029,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00055,INV-2025-0036,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00056,INV-2025-0033,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00057,INV-2025-0049,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00058,INV-2025-0043,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00059,INV-2025-0050,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00060,INV-2025-0075,one_to_one,DATE_DRIFT,no,no,no,prepaid ~60 days before due date
+TXN00061,,unmatchable_transaction,NO_INVOICE,yes,no,no,looks like a customer receipt but no invoice exists for it
+TXN00062,,unmatchable_transaction,NO_INVOICE,yes,no,no,non-AR bank line (fee / payroll / lease / tax)
+TXN00063,,unmatchable_transaction,NO_INVOICE,yes,no,no,looks like a customer receipt but no invoice exists for it
+TXN00064,INV-2025-0066,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00065,INV-2025-0056,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00066,INV-2025-0060,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00067,INV-2025-0053,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00068,INV-2025-0070,one_to_one,DUPLICATE,no,no,no,genuine credit; a duplicate re-posting of it also appears
+TXN00069,INV-2025-0073,one_to_one,DUPLICATE,no,no,no,genuine credit; a duplicate re-posting of it also appears
+TXN00070,INV-2025-0039,one_to_one,DATE_DRIFT,no,no,no,paid 47 days past due
+TXN00071,INV-2025-0065,one_to_one,NAME_NOISE,no,no,no,counterparty mangled by rail style 3
+TXN00072,,unmatchable_transaction,DUPLICATE_ARTIFACT,yes,no,no,bank re-posting of an earlier credit; settles nothing
+TXN00073,,unmatchable_transaction,DUPLICATE_ARTIFACT,yes,no,no,bank re-posting of an earlier credit; settles nothing
+TXN00074,INV-2025-0047,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00075,INV-2025-0061,one_to_one,NAME_NOISE,no,no,no,counterparty mangled by rail style 0
+TXN00076,INV-2025-0055,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00077,INV-2025-0068,one_to_one,NAME_NOISE,no,no,no,counterparty mangled by rail style 4
+TXN00078,,unmatchable_transaction,NO_INVOICE,yes,no,no,looks like a customer receipt but no invoice exists for it
+TXN00079,INV-2025-0078,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00080,INV-2025-0064,many_txns_one_invoice,PARTIAL,no,no,no,instalment 1/3; only the sum equals the invoice
+TXN00081,INV-2025-0040,one_to_one,DATE_DRIFT,no,no,no,paid 59 days past due
+TXN00082,INV-2025-0086,one_to_one,NAME_NOISE,no,no,no,counterparty mangled by rail style 0
+TXN00083,INV-2025-0051,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00084,INV-2025-0085,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00085,INV-2025-0072,many_txns_one_invoice,PARTIAL,no,no,no,instalment 1/2; only the sum equals the invoice
+TXN00086,INV-2025-0082,one_to_one,FX_DIFF,no,no,no,EUR invoice credited in USD; -0.52% off table rate
+TXN00087,,unmatchable_transaction,NO_INVOICE,yes,no,no,looks like a customer receipt but no invoice exists for it
+TXN00088,INV-2025-0059,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00089,INV-2025-0064,many_txns_one_invoice,PARTIAL,no,no,no,instalment 2/3; only the sum equals the invoice
+TXN00090,INV-2025-0063,one_to_one,NAME_NOISE,no,no,no,counterparty mangled by rail style 3
+TXN00091,INV-2025-0064,many_txns_one_invoice,PARTIAL,no,no,no,instalment 3/3; only the sum equals the invoice
+TXN00092,INV-2025-0069,one_to_one,DUPLICATE,no,no,yes,genuine credit; a duplicate re-posting of it also appears
+TXN00093,INV-2025-0067,one_to_one,NAME_NOISE,no,no,no,counterparty mangled by rail style 1
+TXN00094,INV-2025-0072,many_txns_one_invoice,PARTIAL,no,no,no,instalment 2/2; only the sum equals the invoice
+TXN00095,,unmatchable_transaction,DUPLICATE_ARTIFACT,yes,no,yes,bank re-posting of an earlier credit; settles nothing
+TXN00096,INV-2025-0095,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00097,INV-2025-0097,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00098,INV-2025-0081,one_to_one,DUPLICATE,no,no,yes,genuine credit; a duplicate re-posting of it also appears
+TXN00099,INV-2025-0084,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00100,,unmatchable_transaction,DUPLICATE_ARTIFACT,yes,no,yes,bank re-posting of an earlier credit; settles nothing
+TXN00101,INV-2025-0077,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00102,INV-2025-0092,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00103,INV-2025-0080,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00104,INV-2025-0088,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00105,INV-2025-0087,one_to_one,AMBIGUOUS,no,yes,no,customer has 2 open invoices of exactly 13116.47; no reference quoted - FIFO convention applied
+TXN00106,INV-2025-0093,one_to_one,FEE_DEDUCTION,no,no,no,credit is short by a 15.00 wire fee
+TXN00107,INV-2025-0083,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00108,INV-2025-0062,one_to_one,DATE_DRIFT,no,no,no,paid 38 days past due
+TXN00109,INV-2025-0071,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00110,INV-2025-0090,one_to_one,DUPLICATE,no,no,yes,genuine credit; a duplicate re-posting of it also appears
+TXN00111,INV-2025-0094,one_to_one,AMBIGUOUS,no,yes,no,customer has 2 open invoices of exactly 23211.55; no reference quoted - FIFO convention applied
+TXN00112,,unmatchable_transaction,NO_INVOICE,yes,no,no,non-AR bank line (fee / payroll / lease / tax)
+TXN00113,,unmatchable_transaction,DUPLICATE_ARTIFACT,yes,no,yes,bank re-posting of an earlier credit; settles nothing
+TXN00114,INV-2025-0076,one_to_one,DUPLICATE,no,no,no,genuine credit; a duplicate re-posting of it also appears
+TXN00115,INV-2025-0096,one_txn_many_invoices,CONSOLIDATED,no,no,no,single credit clears 2 invoices; no individual invoice matches this amount
+TXN00115,INV-2025-0099,one_txn_many_invoices,CONSOLIDATED,no,no,no,single credit clears 2 invoices; no individual invoice matches this amount
+TXN00116,,unmatchable_transaction,DUPLICATE_ARTIFACT,yes,no,no,bank re-posting of an earlier credit; settles nothing
+TXN00117,,unmatchable_transaction,NO_INVOICE,yes,no,no,non-AR bank line (fee / payroll / lease / tax)
+TXN00118,INV-2025-0091,one_to_one,CLEAN,no,no,yes,"exact amount, same currency, payment near due date"
+TXN00119,INV-2025-0079,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+TXN00120,INV-2025-0089,one_to_one,CLEAN,no,no,no,"exact amount, same currency, payment near due date"
+,INV-2025-0007,unmatchable_invoice,UNPAID,yes,no,no,never paid inside the statement window
+,INV-2025-0009,unmatchable_invoice,UNPAID,yes,no,no,never paid inside the statement window
+,INV-2025-0015,unmatchable_invoice,UNPAID,yes,no,no,never paid inside the statement window
+,INV-2025-0024,unmatchable_invoice,UNPAID,yes,no,no,never paid inside the statement window
+,INV-2025-0052,unmatchable_invoice,UNPAID,yes,no,no,never paid inside the statement window
+,INV-2025-0074,unmatchable_invoice,UNPAID,yes,no,no,never paid inside the statement window
+,INV-2025-0098,unmatchable_invoice,AMBIGUOUS,yes,yes,no,loser of an ambiguous same-amount pair; left open by FIFO
+,INV-2025-0100,unmatchable_invoice,AMBIGUOUS,yes,yes,no,loser of an ambiguous same-amount pair; left open by FIFO

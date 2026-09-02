@@ -1,0 +1,35 @@
+{
+  "seed_invoices": 100,
+  "seed_transactions": 120,
+  "ground_truth_rows": 131,
+  "invoice_cases": {
+    "CLEAN": 48,
+    "NAME_NOISE": 12,
+    "DUPLICATE": 8,
+    "UNPAID": 6,
+    "CONSOLIDATED": 5,
+    "DATE_DRIFT": 5,
+    "AMBIGUOUS": 4,
+    "FEE_DEDUCTION": 4,
+    "FX_DIFF": 4,
+    "PARTIAL": 4
+  },
+  "transaction_cases": {
+    "CLEAN": 48,
+    "NO_INVOICE": 17,
+    "NAME_NOISE": 12,
+    "PARTIAL": 10,
+    "DUPLICATE": 8,
+    "DUPLICATE_ARTIFACT": 8,
+    "DATE_DRIFT": 5,
+    "FEE_DEDUCTION": 4,
+    "FX_DIFF": 4,
+    "AMBIGUOUS": 2,
+    "CONSOLIDATED": 2
+  },
+  "true_pairs": 98,
+  "unmatchable_transactions": 25,
+  "unmatchable_invoices": 8,
+  "transactions_with_invoice_ref": 24,
+  "ambiguous_rows": 4
+}
