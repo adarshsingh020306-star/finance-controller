@@ -25,7 +25,20 @@ echo "==> Python: $("$PY" --version 2>&1) ($PY)"
 
 if [ ! -d .venv ]; then
   echo "==> Creating .venv"
-  "$PY" -m venv .venv
+  if ! "$PY" -m venv .venv; then
+    rm -rf .venv
+    echo >&2
+    echo "error: could not create a virtualenv here." >&2
+    echo "  On Windows this is usually the 260-character MAX_PATH limit: pip's" >&2
+    echo "  vendored tree is deep, so a clone in a long path fails at ensurepip." >&2
+    echo "  Current path is ${#PWD} chars: $PWD" >&2
+    echo "  Fix: re-clone somewhere shorter (e.g. C:/src/finance-controller)," >&2
+    echo "  or skip the venv entirely:" >&2
+    echo "      pip install -r requirements.txt" >&2
+    echo "      PYTHONPATH=src python -m reconciler.generate_data --out data" >&2
+    echo "      PYTHONPATH=src python -m reconciler.report --out reports/results.md" >&2
+    exit 1
+  fi
 fi
 # shellcheck disable=SC1091
 if [ -f .venv/bin/activate ]; then

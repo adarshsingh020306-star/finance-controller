@@ -246,3 +246,13 @@ Also worth recording: the first clone test reported exit code 0 despite failing,
 because the command was piped into `grep` and a pipeline returns its *last* command's
 status. The test was lying, not the script. Re-verified afterwards by checking
 `PIPESTATUS[0]` and by reading the full output rather than a filtered view.
+
+**B10 resolution.** Re-verified from a clean clone of the pushed repo: `run.sh` exits
+0, 34 tests pass, and the report reproduces 96/98 correct, 0 wrong, precision 100.0%,
+recall 98.0%. The intermediate `ensurepip` failure seen during that verification was
+*not* a repo bug - it was the test location. The scratchpad path was ~230 characters,
+and pip's vendored tree pushed the venv past Windows' 260-character MAX_PATH limit.
+Re-running from a 76-character path succeeded. `run.sh` now detects a failed venv
+creation and prints the path length plus a no-venv fallback, rather than surfacing a
+raw `ensurepip` traceback. Recorded because "it failed" and "it failed *here*" are
+different findings and only the second one was true.

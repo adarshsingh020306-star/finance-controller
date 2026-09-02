@@ -19,7 +19,7 @@ did not execute. Reproduce with `./run.sh --no-llm`.
 |---|---:|
 | Records processed | 220 (120 transactions + 100 invoices) |
 | Wall clock | 0.106 s |
-| Throughput | **2,080 records/sec** |
+| Throughput | **~2,000 records/sec** (2,080 local, 1,971 from a clean clone) |
 | Match rate | 93 / 120 transactions (77.5%) |
 | **Correct matches** | **96** of 98 true pairs |
 | **Wrong matches** | **0** |
@@ -110,6 +110,11 @@ report rather than passing deterministic-only numbers off as its full result:
 ```bash
 cp .env.example .env    # then put your key in it
 ```
+
+**Windows note.** Clone somewhere short. `python -m venv` fails at `ensurepip` when
+the path is long, because pip's vendored tree runs past the 260-character MAX_PATH
+limit — `run.sh` detects this and prints the workaround. Verified working from a clean
+clone at a 76-character path: 34 tests pass, 96/98 correct, 0 wrong.
 
 Other entry points:
 
